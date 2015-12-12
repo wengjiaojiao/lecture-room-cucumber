@@ -4,8 +4,8 @@ Given(/^Open the homepage$/) do
 	sleep 1
 end
 
-Given(/^Click the button add$/) do
-	click_on '#add'
+Given(/^Click the button$/) do
+	click_on 'add'
 	sleep 1
 end
 
