@@ -6,4 +6,4 @@ Capybara.register_driver :selenium do |app|
 end
 
 Capybara.default_driver = :selenium
-Capybara.app_host = 'http://wengjiaojiao.github.io/lecture-room-cucumber/views/'
+Capybara.app_host = 'http://localhost:3000'
