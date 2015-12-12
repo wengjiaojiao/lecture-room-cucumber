@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+     <div class="container">
+        <div class="search">
+            <input type="text" id="search-frame" class="search-frame" placeholder="搜索">
+        </div>
+        <table id="prompts" class="table table-hover table-bordered" cellpadding="0" align="center">
+            <thead>
+                <tr>
+                    <td id="one"><h4>result</h4></td>
+                    <td id="two"><h4>delete</h4></td>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+
+        <button type="button" id ="add" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
+        Add new bookmarks
+        </button>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Add new bookmarks</h4>
+              </div>
+              <div class="modal-body">
+                  Name:
+                  <input type="text" id="name">
+                  Address:
+                  <input type="text" id="address">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" id="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="result"></div>
+    </div>
+    <script src="./jquery-1.11.3.min.js"></script>
+    <script src="./lodash.src.js"></script>
+    <script src="./index.js"></script>
+    <script src="./add.js"></script>
+    <script src="./delete.js"></script>
+    <script src="./bootstrap/js/modal.js"></script>
+</body>
+</html>
