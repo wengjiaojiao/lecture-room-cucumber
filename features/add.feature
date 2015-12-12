@@ -3,5 +3,3 @@ Feature: Add
         * Open the homepage
         * Click the button
         * Input "baidu" and "www.baidu.com"
-        * Search "baidu"
-        * Have 1 result
